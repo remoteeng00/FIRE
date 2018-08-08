@@ -1,22 +1,23 @@
 import re
-import os.path 
+import hgvs
 
-def load_data (data_folder):
+def load_data (data_file):
          
-         data_file = os.path.join(data_folder, "FIRE_chrY.txt") 
-         
-         d = {"fire":{}}
+         d = {}
                    
          with open(data_file, "r+") as f:
              for line in f:
                  y = re.split("[\t \n]", line)
-                 if y[0] == "Y":
-                    d["fire"]["chr"] = y[0]
-                    d["fire"]["pos"] = y[1]
-                    d["fire"]["ref"] = y[2]
-                    d["fire"]["alt"] = y[3]
-                    d["fire"]["score"] = y[4]
-                    yield d
+                 if y[0] != "Chrom":
+                    x = hgvs.get_hgvs_from_vcf(y[0], y[1],y[2], y[3])
+                    d[x] = {}
+                    d[x]["chr"] = y[0]
+                    d[x]["pos"] = y[1]
+                    d[x]["ref"] = y[2]
+                    d[x]["alt"] = y[3]
+                    d[x]["score"] = float(y[4])
+                    print(d)
+                    d = {}
                  
 if "__name__" == "__main__":
     g = load_data(data_folder)

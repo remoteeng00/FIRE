@@ -18,6 +18,3 @@ def load_data (data_file):
                     d[x]["score"] = float(y[4])
                     print(d)
                     d = {}
-                 
-if "__name__" == "__main__":
-    g = load_data(data_folder)

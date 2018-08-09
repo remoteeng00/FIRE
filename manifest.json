@@ -26,7 +26,7 @@
                      "http://web.stanford.edu/~nilah/fire/FIRE_chr22.txt.gz",  
                      "https://www.dropbox.com/s/dl/12pylu6tixvcw6p/FIRE_chrX.txt.gz", 
                      "https://www.dropbox.com/s/dl/x1he9l1byw50wzk/FIRE_chrY.txt.gz"
-         ]
+         ],
         "uncompress" : true
     },
     "uploader" : {

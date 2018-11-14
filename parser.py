@@ -1,5 +1,5 @@
 import re
-import hgvs
+import utils.hgvs as hgvs
 
 def load_data (data_file):
          

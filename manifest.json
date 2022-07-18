@@ -5,7 +5,8 @@
                      "https://dl.dropbox.com/s/je69vi4tlccc7ba/FIRE_chrX_head100k.txt.gz", 
                      "https://dl.dropbox.com/s/n6et3rqx0jooz3b/FIRE_chrY_head100k.txt.gz"
          ],
-        "uncompress" : true
+        "uncompress" : true,
+        "release": "versions:get_release"
     },
     "uploader" : {
         "parser" : "parser:load_data",

@@ -2,8 +2,8 @@
     "version": "0.1",
     "dumper" : {
         "data_url" : [
-                     "https://dl.dropbox.com/s/je69vi4tlccc7ba/FIRE_chrX_head100k.txt.gz", 
-                     "https://dl.dropbox.com/s/n6et3rqx0jooz3b/FIRE_chrY_head100k.txt.gz"
+            "https://dl.dropbox.com/s/bk3bmwtwhn0749u/FIRE_chrX_head100k.txt.zip", 
+            "https://dl.dropbox.com/s/j78qynk0qvrwwft/FIRE_chrY_head100k.txt.zip"
          ],
         "uncompress" : true
     },

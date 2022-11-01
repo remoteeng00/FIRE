@@ -11,6 +11,6 @@
     "uploader" : {
         "parser" : "parser:load_data",
         "parallelizer" : "parallelizer:new_jobs",
-        "ignore_duplicates" : false
+        "on_duplicates" : "error"
     }
 }

@@ -1,12 +1,16 @@
+import os
 import re, logging
 
 
 
-def load_data(data_folder):
-    file_names = [
-        data_folder + '/FIRE_chrX_head100k.txt',
-        data_folder + '/FIRE_chrY_head100k.txt'
-    ]
+def load_data(data_path):
+    if os.path.isfile(data_path):
+        file_names = [data_path]
+    else:
+        file_names = [
+            data_path + '/FIRE_chrX_head100k.txt',
+            data_path + '/FIRE_chrY_head100k.txt'
+        ]
     for file_name in file_names:
         with open(file_name, "r+") as f:
             for line in f:

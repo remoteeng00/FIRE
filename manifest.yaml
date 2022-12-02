@@ -1,6 +1,6 @@
 ---
 version: '0.3'
-name: FIRE2
+name: FIRE3
 dumper:
   data_url:
   - https://dl.dropbox.com/s/bk3bmwtwhn0749u/FIRE_chrX_head100k.txt.zip
